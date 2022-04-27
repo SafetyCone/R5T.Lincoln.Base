@@ -1,9 +1,12 @@
 ﻿using System;
 
+using R5T.T0064;
+
 
 namespace R5T.Lincoln
 {
-    public interface IConnectionStringProvider
+    [ServiceDefinitionMarker]
+    public interface IConnectionStringProvider : IServiceDefinition
     {
         string GetConnectionString();
     }
